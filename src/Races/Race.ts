@@ -9,7 +9,7 @@ export default abstract class Race {
   }
 
   public get name(): string {
-    return this.name;
+    return this._name;
   }
 
   // public set name(value: string) {
@@ -17,7 +17,7 @@ export default abstract class Race {
   // }
 
   public get dexterity(): number {
-    return this.dexterity;
+    return this._dexterity;
   }
 
   // public set dexterity(value: number) {
@@ -35,5 +35,5 @@ export default abstract class Race {
     // return count;
   }
 
-  abstract get maxLifePoints(): number;
+  public abstract get maxLifePoints(): number;
 }
