@@ -1,5 +1,7 @@
 // import Fighter from '../Fighter';
 
+// Inicia o projeto
+
 // abstract class Battle {
 //   constructor(protected player: Fighter) { }
 
