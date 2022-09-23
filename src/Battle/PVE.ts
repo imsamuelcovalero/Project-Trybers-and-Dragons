@@ -1,12 +1,12 @@
 import Fighter, { SimpleFighter } from '../Fighter';
 import Battle from './Battle';
-// import getRandomInt from '../utils';
 
 export default class PVE extends Battle {
-  private _monstros: SimpleFighter[] | Fighter[];
+  // usa o método de iniciar os atributos como privados acima do constructor
+  private _monstros: SimpleFighter[];
   private _player: Fighter;
 
-  constructor(player: Fighter, monstros: SimpleFighter[] | Fighter[]) {
+  constructor(player: Fighter, monstros: SimpleFighter[]) {
     super(player);
     this._monstros = monstros;
     this._player = player;
