@@ -15,15 +15,8 @@ export default abstract class Race {
     return this._dexterity;
   }
 
-  static createdRacesInstances(/* maxInstanceNumber: number */): number {
-    // let count = 0;
-    // if (count === maxInstanceNumber) {
-    //   throw new Error('Not implemented');
-    // }
+  static createdRacesInstances(): number {
     throw new Error('Not implemented');
-
-    // count += count + 1;
-    // return count;
   }
 
   public abstract get maxLifePoints(): number;

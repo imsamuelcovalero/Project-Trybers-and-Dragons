@@ -5,7 +5,6 @@ import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
 export default class Character implements Fighter {
-  // static counterLvlUp = 0;
   private _race: Race;
   private _archetype: Archetype;
   private _maxLifePoints: number;
@@ -88,7 +87,6 @@ export default class Character implements Fighter {
       this._maxLifePoints = this._race.maxLifePoints;
     }
     this._lifePoints = this._maxLifePoints;
-    // Character.counterLvlUp += 1;
   }
 
   special(enemy: Fighter): number {

@@ -2,7 +2,6 @@ import Fighter from '../Fighter';
 import Battle from './Battle';
 
 export default class PVP extends Battle {
-  // usa o método de iniciar os atributos como privados já dentro do constructor
   constructor(private player1: Fighter, private player2: Fighter) {
     super(player1);
   }

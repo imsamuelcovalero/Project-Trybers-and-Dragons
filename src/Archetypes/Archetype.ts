@@ -23,15 +23,8 @@ export default abstract class Archetype {
     return this._cost;
   }
 
-  static createdArchetypeInstances(/* maxInstanceNumber: number */): number {
-    // let count = 0;
-    // if (count === maxInstanceNumber) {
-    //   throw new Error('Not implemented');
-    // }
+  static createdArchetypeInstances(): number {
     throw new Error('Not implemented');
-
-    // count += count + 1;
-    // return count;
   }
 
   public abstract get energyType(): EnergyType;
