@@ -1,4 +1,5 @@
 import Energy from '../Energy';
+import SimpleFighter from './SimpleFighter';
 
 // A interface deverá possuir os métodos:
 // attack(), que recebe um enemy do tipo Fighter como parâmetro e não possui retorno (void);
@@ -7,13 +8,13 @@ import Energy from '../Energy';
 // receiveDamage(), que recebe um attackPoints do tipo number como parâmetro e retorne um number.
 // export type attackPoints = number;
 
-export default interface Fighter {
-  lifePoints: number;
-  strength: number;
+export default interface Fighter extends SimpleFighter {
   defense: number;
   energy?: Energy;
-  attack(enemy: Fighter): void;
   special?: (enemy: Fighter) => void;
   levelUp(): void;
-  receiveDamage(attackPoints: number): number;
+  // lifePoints: number;
+  // strength: number;
+  // attack(enemy: SimpleFighter): void;
+  // receiveDamage(attackPoints: number): number;
 }
