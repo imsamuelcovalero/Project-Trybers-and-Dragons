@@ -1,16 +1,23 @@
-# 🚧 README em construção 🚧
+# Project Trybers and Dragons
+# Contexto
+No projeto de backend da Trybe, Trybers and Dragons, criamos um jogo de RPG em TypeScript colocando em prática os conceitos de Programação Orientada a Objeto e SOLID. O "jogo" conta com diversas classes de players além de monstros e possui modo PVP e PVE. Os commits estão no padrão convencional.
 
-<!-- Olá, Tryber!
-
-Esse é apenas um arquivo inicial para o README do seu projeto.
-
-É essencial que você preencha esse documento por conta própria, ok?
-
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+## Tecnologias usadas
+Back-end:
+> Desenvolvido usando: NodeJS e Typescript.
+## Instalando Dependências
+> Backend
+```bash
+cd Project-Trybers-and-Dragons
+npm install
+``` 
+## Executando aplicação em docker
+* Para rodar o back-end:
+  ```
+  docker-compose up -d
+  ```
+  * Para rodar os comandos dentro do container do docker:
+    ```
+    Abra um terminal e rode: docker exec -it trybers_and_dragons bash
+    Instale as dependências dentro do docker: npm install
+    ```
